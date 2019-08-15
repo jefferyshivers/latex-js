@@ -1,0 +1,46 @@
+{
+  "name": "latex-js",
+  "version": "0.1.0",
+  "description": "create compilable LaTeX documents in javascript",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node ./node_modules/.bin/tsc",
+    "test": "mocha ./.bin/build/*.test.js ./.bin/build/**/*test.js --recursive",
+    "build": "node ./node_modules/.bin/tsc",
+    "doc": "./node_modules/.bin/typedoc --exclude **/*.test.ts --module es6 --out ./docs",
+    "study": "yarn doc && open ./docs/index.html",
+    "lint": "eslint ./src --ext ts",
+    "dev": "./node_modules/.bin/gulp watch"
+  },
+  "repository": "git@github.com:jefferyshivers/latex-js.git",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "latex"
+  ],
+  "author": "Jeffery Shivers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jefferyshivers/latex-js/issues"
+  },
+  "homepage": "https://github.com/jefferyshivers/latex-js#readme",
+  "dependencies": {
+    "@types/node": "^11.13.8",
+    "@types/reflect-metadata": "^0.1.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "reflect-metadata": "^0.1.13",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.4.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "gulp": "^4.0.1"
+  }
+}
