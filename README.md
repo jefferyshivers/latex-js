@@ -1,4 +1,4 @@
-# jsTeX
+# latex-js
 
 [![js-standard-style](https://img.shields.io/badge/code_style-standard-f7df1e.svg?logo=javascript&logoColor=f7df1e)](https://github.com/standard/standard)
 
